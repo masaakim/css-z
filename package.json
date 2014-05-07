@@ -4,7 +4,7 @@
   "description": "Analize z-index property in CSS code",
   "main": "index.js",
   "scripts": {
-    "test": "tape test.js"
+    "test": "tape test/test.js"
   },
   "repository": {
     "type": "git",
