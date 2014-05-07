@@ -10,24 +10,24 @@ test('z_index.num', function(t) {
 
   t.equal(result, expected);
 
-  t.enc();
+  t.end();
 });
 
 test('z_index.max', function(t) {
   var result = 9999;
-  var expected = z_index.num(css);
+  var expected = z_index.max(css);
 
   t.equal(result, expected);
 
-  t.enc();
+  t.end();
 });
 
 test('z_index.min', function(t) {
   var result = -3;
-  var expected = z_index.num(css);
+  var expected = z_index.min(css);
 
   t.equal(result, expected);
 
-  t.enc();
+  t.end();
 })
 
