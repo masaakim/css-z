@@ -28,6 +28,8 @@ module.exports.max = function(css) {
 
     rule.declarations.forEach(function(declaration) {
       if (declaration.property === 'z-index') {
+        if (declaration.value === 'auto') return
+
         z_values.push(+declaration.value);
       }
     });
@@ -45,6 +47,8 @@ module.exports.min = function(css) {
 
     rule.declarations.forEach(function(declaration) {
       if (declaration.property === 'z-index') {
+        if (declaration.value === 'auto') return
+
         z_values.push(+declaration.value);
       }
     });
