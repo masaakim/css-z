@@ -6,4 +6,5 @@ var css = ".z1{z-index:10;}.z2{z-index:20;}.z3{z-index:-3;}.z4{z-index:0;}.z5{z-
 z_index.num(css);
 z_index.max(css);
 z_index.min(css);
+z_index.list(css);
 z_index.stats(css);

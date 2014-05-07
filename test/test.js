@@ -31,3 +31,29 @@ test('z_index.min', function(t) {
   t.end();
 })
 
+test('z_index.list', function(t) {
+  var result = [
+    { selector: '.z1',
+      z_val: '10'},
+    { selector: '.z2',
+      z_val: '20'},
+    { selector: '.z3',
+      z_val: '-3'},
+    { selector: '.z4',
+      z_val: '0'},
+    { selector: '.z5',
+      z_val: '9999'},
+    { selector: '.z6',
+      z_val: 'auto'}
+  ];
+  var expected = z_index.list(css);
+
+  t.same(result, expected);
+
+  t.end();
+});
+
+
+
+
+
