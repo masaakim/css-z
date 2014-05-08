@@ -68,7 +68,7 @@ module.exports.stats = function(css) {
       if (declaration.property === 'z-index') {
         var that = {};
         that.selector = rule.selectors.pop();
-        that.z_val = declaration.value;
+        that.z_value = declaration.value;
 
         z_stats.push(that);
       }

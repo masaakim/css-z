@@ -34,17 +34,17 @@ test('z_index.min', function(t) {
 test('z_index.stats', function(t) {
   var result = [
     { selector: '.z1',
-      z_val: '10'},
+      z_value: '10'},
     { selector: '.z2',
-      z_val: '20'},
+      z_value: '20'},
     { selector: '.z3',
-      z_val: '-3'},
+      z_value: '-3'},
     { selector: '.z4',
-      z_val: '0'},
+      z_value: '0'},
     { selector: '.z5',
-      z_val: '9999'},
+      z_value: '9999'},
     { selector: '.z6',
-      z_val: 'auto'}
+      z_value: 'auto'}
   ];
   var expected = z_index.stats(css);
 
