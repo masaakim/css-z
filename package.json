@@ -1,6 +1,6 @@
 {
   "name": "css-z",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Analize z-index property in CSS code",
   "main": "index.js",
   "scripts": {
