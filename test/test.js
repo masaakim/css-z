@@ -31,7 +31,7 @@ test('z_index.min', function(t) {
   t.end();
 })
 
-test('z_index.list', function(t) {
+test('z_index.stats', function(t) {
   var result = [
     { selector: '.z1',
       z_val: '10'},
@@ -46,7 +46,7 @@ test('z_index.list', function(t) {
     { selector: '.z6',
       z_val: 'auto'}
   ];
-  var expected = z_index.list(css);
+  var expected = z_index.stats(css);
 
   t.same(result, expected);
 

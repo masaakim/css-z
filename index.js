@@ -57,9 +57,9 @@ module.exports.min = function(css) {
   return _.min(z_values);
 };
 
-module.exports.list = function(css) {
+module.exports.stats = function(css) {
   var ast = parse(css);
-  var z_list = [];
+  var z_stats = [];
 
   ast.stylesheet.rules.forEach(function visit(rule) {
     if (rule.rules) rule.rules.forEach(visit);
@@ -70,14 +70,10 @@ module.exports.list = function(css) {
         that.selector = rule.selectors.pop();
         that.z_val = declaration.value;
 
-        z_list.push(that);
+        z_stats.push(that);
       }
     });
   });
 
-  return z_list;
-};
-
-module.exports.stats = function(css) {
-
+  return z_stats;
 };
